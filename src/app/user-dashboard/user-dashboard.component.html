@@ -1,0 +1,36 @@
+<div class="header">
+    <h2>Vos abonnements :</h2><br>
+    <app-add-bar></app-add-bar>
+</div>
+
+<div class="dashb">
+    <ul class="subscriptions-container">
+        <li *ngFor="let abo of abonnements" class="subscription-box">
+            <div class="subscription-content">
+                <p class="subscription-text">
+                    {{abo.intitule}} <br>
+                    Prix : <span class="price">{{abo.prix}}€</span> <br>
+                    Date de paiement : {{abo.datePaiement}}<br>
+                    <h3>Dans {{nombreJoursRestants(abo.datePaiement)}} Jours </h3>
+            
+                <button (click)="supprimerAbo(abo.id_user,abo.intitule,abo.categorie,abo.prix,abo.datePaiement)" class="delete-btn">Supprimer abonnement</button>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="graphics">
+    <h2>Dashboard :  :</h2><br>
+    <ngx-charts-bar-vertical
+  [results]="data"
+  [customColors]="colorScheme"
+  [xAxis]="showXAxis"
+  [yAxis]="showYAxis"
+  [showDataLabel]="true"
+  [showXAxisLabel]="showXAxisLabel"
+  [showYAxisLabel]="showYAxisLabel"
+  [xAxisLabel]="xAxisLabel"
+  [yAxisLabel]="yAxisLabel">
+</ngx-charts-bar-vertical>
+    
+</div>

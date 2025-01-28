@@ -1,0 +1,27 @@
+<body>
+    <div class="form">
+    <form (ngSubmit)="loginUser()">
+    <h2>Login  </h2>
+    <div>
+    <label for="email">Email :</label><br>
+    <input [(ngModel)]="email" width="100px" name="email" id="email" type="email" placeholder=" Exemple : myEmailx@gmail.com" required>
+    </div>
+    
+    <div>
+    <label for="password">Password : </label><br>
+    <input  [(ngModel)]="password" width="100px"  name="password" id="password" type="password" required>
+    </div>
+    
+    
+    <div>
+     <button type="submit" >S'inscrire</button>
+    </div>
+
+    <div>
+     <a [routerLink]="['/signup']">Pas de compte? Inscrivez vous</a>
+    </div>
+    </form>
+    
+    
+    </div>
+    </body>

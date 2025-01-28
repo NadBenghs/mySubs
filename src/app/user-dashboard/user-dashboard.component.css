@@ -1,0 +1,66 @@
+/* Style général pour la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centrage vertical */
+  }
+  .subscriptions-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8d7da; /* Rouge clair */
+    border-radius: 10px;
+}
+
+.subscription-box {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.subscription-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscription-text {
+    color: #e24c4c;;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.2em;
+}
+
+.delete-btn {
+    background: #e24c4c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+  /* Titre principal */
+  h2,h3 {
+    color: #e24c4c; /* Couleur rouge clair */
+    margin-bottom: 20px;
+    font-size: 24px;
+  }

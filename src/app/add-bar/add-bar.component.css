@@ -1,0 +1,102 @@
+/* Global settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligné en haut pour éviter de cacher le bas */
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Form container */
+  form {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;  /* Disposition horizontale */
+    flex-wrap: wrap;  /* Pour gérer les champs qui ne tiennent pas sur une ligne */
+    gap: 15px;  /* Espacement entre les champs */
+    align-items: center;
+    width: auto;
+    max-width: 100%;  /* S'adapte à la largeur de l'écran */
+    justify-content: flex-start;
+    margin-top: 20px; /* Espacement depuis le haut de la page */
+  }
+  
+  /* Input and Select styles */
+  label {
+    font-size: 14px;
+    color: #e24c4c;
+    margin-right: 10px;
+    white-space: nowrap;  /* Empêche le texte d'aller à la ligne */
+  }
+  
+  input, select {
+    color: #e24c4c;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    width: 150px;  /* Largeur des champs pour qu'ils soient petits */
+    min-width: 120px;  /* Largeur minimale */
+  }
+  
+  input:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #fff;
+  }
+  
+  /* Button Styles */
+  button {
+    background-color: #e24c4c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 100px;
+  }
+  
+  button:hover:enabled{
+
+    background-color: darkred;
+
+  }
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Adjustments for smaller screens */
+  @media (max-width: 600px) {
+    form {
+      flex-direction: column; /* Passage en mode vertical pour les petits écrans */
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    input, select, button {
+      width: 100%; /* Champs et bouton occupent toute la largeur */
+      max-width: 100%;
+    }
+  }
+  
