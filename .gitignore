@@ -50,3 +50,7 @@ Thumbs.db
 .firebase/
 firebase-debug.log
 
+<<<<<<< HEAD
+=======
+/src/app/app.config.ts
+>>>>>>> 97dc149ae13d4b460b3d2a4f7e7a7930dd310c95
