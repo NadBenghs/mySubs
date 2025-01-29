@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "mysubs-fe7c4"
-  }
+    "default": "mysubs-fe7c4",
+    "mysubs": "mysubs-fe7c4"
+  },
+  "targets": {},
+  "etags": {}
 }
